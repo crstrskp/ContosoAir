@@ -7,7 +7,7 @@ steps:
     inputs:
       command: 'custom'
       customcommand: 'install --production'
-  - script: 'npm test'
+  - script: 'npm test -- --updateSnapshot'
     displayName: 'Run unit tests'
     continueOnError: true
   - task: PublishTestResults@2
